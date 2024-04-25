@@ -99,19 +99,27 @@ header,footer{
         }
     }
 }
+/*-----------------------------------------------------
+.IconoBuscador {
+    background-color: white;
+   width: 25px;
+}
 
 #buscar {
     background: rgba(255,255,255,0.29);
     border: 0;
-    margin-top: 8px;
     border-radius: 5px;
     color: white;
     width: 20vh;
+    height: 4vh;
+    min-height: auto;
 }
 
 #buscar:hover {
     background: rgba(255,255,255,0.42);
 }
+
+-----------------------------------------------------*/
 
 /*main
 estilos seccion principal
@@ -211,6 +219,7 @@ estilos seccion principal
     margin:0 auto;
     margin-bottom: 20px;
     text-align: center;
+
     h2{
         margin-top:50px;
         margin-bottom:20px;
@@ -237,6 +246,14 @@ estilos seccion principal
             }
         }
     }
+}
+
+.galeriaAclamadas::-webkit-scrollbar {
+    background-color: #000;
+}
+.galeriaAclamadas::-webkit-scrollbar-thumb {
+    background: #f3f3f3;
+    border-radius: 7px;
 }
 
 .footer{
@@ -269,11 +286,21 @@ estilos seccion principal
 
 
 /* Estilo de Página de inicio sesion y registro */
+.formulario-login {
+    color: var(--secondary-color);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+}
 
 .formulario-registro {
     color: var(--secondary-color);
     position: absolute;
-    top: 60%;
+    top: 75%;
     left: 50%;
     width: 400px;
     transform: translate(-50%, -50%);
@@ -292,13 +319,13 @@ estilos seccion principal
     border-bottom: 1px solid silver;
 }
 
-form .email {
+form .login {
     position: relative;
     border-bottom: 2px solid #adadad;
     margin: 30px 0;
 }
 
-.email input {
+.login input {
     width: 100%;
     padding: 0 5px;
     height: 40px;
@@ -309,7 +336,7 @@ form .email {
     border-bottom: 1px solid silver
 }
 
-.email label {
+.login label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -351,3 +378,29 @@ form .email {
     text-decoration: underline;
 }
 
+
+
+/* Estilos para las Peliculas */
+
+.contenedorDetalle {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.imgDetalle {
+    border-bottom: #adadad;
+}
+
+.trailer {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    justify-content: center;
+    justify-self: center;
+    padding-bottom: 10px;
+}
